@@ -2,15 +2,39 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Servicios técnicos en computación</title>
+  <title>Servicio técnico en computación</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
+      background: #0b1220;
       color: #e5e7eb;
+    }
+
+    .hero {
+      background: linear-gradient(
+        rgba(11,18,32,0.85),
+        rgba(11,18,32,0.85)
+      ),
+      url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      color: #c7d2fe;
     }
 
     .container {
@@ -19,39 +43,59 @@
       padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
     h2 {
       margin-top: 40px;
-      border-bottom: 1px solid #334155;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #1e293b;
       padding-bottom: 10px;
     }
 
-    .card {
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
       background: #020617;
       border: 1px solid #1e293b;
       border-radius: 14px;
       padding: 20px;
-      margin-top: 20px;
     }
 
-    a {
+    .service h3 {
+      margin-top: 0;
+      color: #e0e7ff;
+    }
+
+    .service p {
+      color: #9ca3af;
+      font-size: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact a {
       display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
+      margin: 10px;
+      padding: 14px 26px;
+      border-radius: 10px;
       font-weight: bold;
+      text-decoration: none;
+      color: white;
+      background: #2563eb;
+    }
+
+    .contact a.instagram {
+      background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
     }
 
     footer {
-      margin-top: 40px;
+      text-align: center;
+      margin-top: 50px;
       font-size: 14px;
       color: #94a3b8;
     }
@@ -59,29 +103,52 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <h1>Servicios técnicos en computación</h1>
-    <p>Reparación, mantenimiento y optimización de PC. Atención responsable y personalizada.</p>
+  <section class="hero">
+    <h1>Servicio técnico en computación</h1>
+    <p>
+      Reparación, mantenimiento y optimización de computadoras.
+      Atención responsable, clara y personalizada.
+    </p>
+  </section>
+
+  <div class="container">
 
     <h2>Servicios</h2>
 
-    <div class="card">
-      <p>🔧 Reparación y mantenimiento de PC</p>
-      <p>🖥️ Armado de computadoras a medida</p>
-      <p>💾 Instalación de software</p>
-      <p>🎮 Optimización para juegos</p>
-      <p>🤝 Asesoramiento técnico</p>
+    <div class="services">
+      <div class="service">
+        <h3>🔧 Reparación y mantenimiento</h3>
+        <p>Limpieza interna, cambio de pasta térmica, diagnóstico y solución de fallas.</p>
+      </div>
+
+      <div class="service">
+        <h3>🖥️ Armado de PC a medida</h3>
+        <p>Equipos armados según presupuesto: hogar, trabajo o gaming.</p>
+      </div>
+
+      <div class="service">
+        <h3>💾 Software y sistemas</h3>
+        <p>Instalación de Windows, drivers y programas esenciales.</p>
+      </div>
+
+      <div class="service">
+        <h3>🎮 Optimización</h3>
+        <p>Mejoras de rendimiento, FPS y configuración general.</p>
+      </div>
     </div>
 
-    <h2>Contacto</h2>
-    <a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
+    <div class="contact">
+      <h2>Contacto</h2>
+      <a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
+    </div>
 
     <footer>
       Atención responsable · precios claros · trabajo garantizado
     </footer>
 
   </div>
+
 </body>
 </html>
