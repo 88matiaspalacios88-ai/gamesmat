@@ -1,78 +1,158 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicio técnico gamer</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#0b1220;
+  color:#e5e7eb;
+}
+
+/* barra gamer */
+.rgb-bar{
+  height:4px;
+  background:linear-gradient(90deg,#3b82f6,#8b5cf6,#22d3ee);
+}
+
+/* portada */
+.hero{
+  background:
+    linear-gradient(rgba(11,18,32,.85),rgba(11,18,32,.85)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+  background-size:cover;
+  background-position:center;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:18px;
+  color:#c7d2fe;
+  max-width:720px;
+  margin:auto;
+}
+
+/* contenedor */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* tarjetas */
+.card{
+  background:#020617;
+  border:1px solid #1e293b;
+  border-radius:14px;
+  padding:22px;
+  margin-bottom:20px;
+  transition:box-shadow .3s ease, transform .3s ease;
+}
+
+.card:hover{
+  box-shadow:0 0 18px rgba(99,102,241,.45);
+  transform:translateY(-2px);
+}
+
+h2{
+  margin-top:40px;
+  border-bottom:1px solid #1e293b;
+  padding-bottom:8px;
+}
+
+/* contacto */
+.contact{
+  text-align:center;
+  margin-top:40px;
+}
+
+.contact a{
+  display:inline-block;
+  margin:8px;
+  padding:14px 26px;
+  border-radius:10px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#fff;
+  background:#2563eb;
+}
+
+.contact .instagram{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+
+/* sección final gamer */
+.gamer-end{
+  margin-top:60px;
+  background:
+    linear-gradient(rgba(11,18,32,.9),rgba(11,18,32,.9)),
+    url("https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc");
+  background-size:cover;
+  background-position:center;
+  padding:70px 20px;
+  text-align:center;
+}
+
+.gamer-end h2{
+  margin:0 0 10px 0;
+}
+
+footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:14px;
+  color:#94a3b8;
+}
 </style>
 </head>
+
 <body>
-<div class="container">
-<div class="card">
-<h1>Servicios técnicos en computación</h1>
-<p>Soluciones claras, confiables y a medida para que tu computadora funcione como debe.</p>
 
+<div class="rgb-bar"></div>
 
-<div class="divider"></div>
-
-
-<h2>Servicios</h2>
-
-
-<h3>🔧 Reparación y mantenimiento de PC</h3>
-<p>Diagnóstico completo, limpieza interna, cambio de pasta térmica, solución de fallas y mejora del rendimiento general.</p>
-
-
-<h3>🖥️ Armado de computadoras a medida</h3>
-<p>Armado según presupuesto y necesidad: hogar, trabajo, estudio o PC gamer.</p>
-
-
-<h3>💾 Instalación de software y sistemas</h3>
-<p>Instalación de Windows, drivers, programas esenciales y configuración lista para usar.</p>
-
-
-<h3>🎮 Optimización para juegos</h3>
-<p>Mejoras de FPS, ajustes gráficos, optimización del sistema y recomendaciones de hardware.</p>
-
-
-<h3>🤝 Soporte técnico y asesoramiento</h3>
-<p>Asesoramiento honesto antes de comprar o actualizar tu computadora, con atención personalizada.</p>
-
-
-<div class="divider"></div>
-
-
-<h2>Modalidad de trabajo</h2>
-<ul>
-<li>Servicio a domicilio</li>
-<li>Soporte remoto (cuando el problema lo permite)</li>
-<li>Atención personalizada</li>
-</ul>
-
-
-<div class="divider"></div>
-
-
-<h2>Contacto</h2>
-<p>Contactame directamente por mis redes para una respuesta rápida y sin vueltas.</p>
-
-
-<div class="contact">
-<h2>Contacto</h2>
-<p style="margin-bottom:15px;color:#c7d2fe;">📞 Teléfono / WhatsApp: <strong>3364 280204</strong></p>
-<a href="https://wa.me/5493364280204" target="_blank">WhatsApp</a>
-<a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
-<a class="instagram" href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
-</div>
-
-
-<footer>
-<p>Atención responsable, precios claros y trabajo garantizado.</p>
-</footer>
-
-
-<section class="bg-motion">
-<div class="bg-overlay">
-<h2>Trabajo profesional y responsable</h2>
-<p>Equipos confiables, soluciones reales y atención personalizada.</p>
-</div>
+<section class="hero">
+  <h1>Servicio técnico gamer</h1>
+  <p>Reparación, armado y optimización de PC. Atención clara, responsable y sin vueltas.</p>
 </section>
+
+<div class="container">
+
+  <h2>Servicios</h2>
+
+  <div class="card">🔧 Reparación y mantenimiento de computadoras</div>
+  <div class="card">🖥️ Armado de PC a medida (hogar, trabajo y gaming)</div>
+  <div class="card">💾 Instalación de Windows, drivers y programas</div>
+  <div class="card">🎮 Optimización de rendimiento y juegos</div>
+  <div class="card">🤝 Asesoramiento técnico honesto</div>
+
+  <div class="contact">
+    <h2>Contacto</h2>
+    <p>📞 WhatsApp: <strong>3364 280204</strong></p>
+    <a href="https://wa.me/5493364280204" target="_blank">WhatsApp</a>
+    <a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
+    <a class="instagram" href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
+  </div>
+
+  <footer>
+    Atención responsable · precios claros · trabajo garantizado
+  </footer>
+
 </div>
-</div>
+
+<section class="gamer-end">
+  <h2>Potenciamos tu PC</h2>
+  <p>Rendimiento real para jugar y trabajar sin problemas.</p>
+</section>
+
 </body>
 </html>
