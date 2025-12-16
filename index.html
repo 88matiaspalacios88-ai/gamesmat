@@ -1,93 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Servicios técnicos en computación</title>
-<style>
-body {
-font-family: Arial, Helvetica, sans-serif;
-background: #f5f6f8;
-margin: 0;
-padding: 0;
-color: #333;
-}
-.container {
-max-width: 900px;
-margin: auto;
-padding: 24px;
-}
-.card {
-background: #ffffff;
-border-radius: 12px;
-padding: 24px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-h1 {
-font-size: 28px;
-margin-bottom: 8px;
-}
-h2 {
-font-size: 20px;
-margin-top: 28px;
-}
-h3 {
-font-size: 17px;
-margin-bottom: 6px;
-}
-p {
-line-height: 1.6;
-}
-ul {
-padding-left: 20px;
-}
-.divider {
-height: 1px;
-background: #e0e0e0;
-margin: 24px 0;
-}
-.contact a {
-display: inline-block;
-margin-right: 12px;
-margin-top: 10px;
-padding: 10px 16px;
-border-radius: 8px;
-text-decoration: none;
-color: #fff;
-font-weight: bold;
-}
-.facebook { background: #1877f2; }
-.instagram { background: #c13584; }
-footer {
-margin-top: 20px;
-font-size: 14px;
-color: #666;
-}
-.bg-motion {
-position: relative;
-height: 240px;
-margin-top: 60px;
-background: linear-gradient(135deg, #020617, #0b1220);
-}
+  <meta charset="UTF-8">
+  <title>Servicio técnico en computación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1220;
+      color: #e5e7eb;
+    }
 
-.bg-overlay {
-position: absolute;
-inset: 0;
-background: rgba(2,6,23,0.6);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 20px;
-}
+    .hero {
+      background: linear-gradient(
+        rgba(11,18,32,0.85),
+        rgba(11,18,32,0.85)
+      ),
+      url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
 
-.bg-overlay h2 {
-margin: 0 0 10px 0;
-color: #f8fafc;
-}
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      color: #c7d2fe;
+    }
 
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-.bg-overlay p {
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 10px;
+    }
+
+    .service {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 26px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      background: #2563eb;
+    }
+
+    .contact a.instagram {
+      background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1>Servicio técnico en computación</h1>
+    <p>
+      Reparación, mantenimiento y optimización de computadoras.
+      Atención responsable, clara y personalizada.
+    </p>
+  </section>
+
+  <div class="container">
+
+    <h2>Servicios</h2>
+
+    <div class="service">
+      <strong>🔧 Reparación y mantenimiento</strong><br>
+      Limpieza interna, cambio de pasta térmica y solución de fallas.
+    </div>
+
+    <div class="service">
+      <strong>🖥️ Armado de PC a medida</strong><br>
+      Equipos según presupuesto: hogar, trabajo o gaming.
+    </div>
+
+    <div class="service">
+      <strong>💾 Software y sistemas</strong><br>
+      Instalación de Windows, drivers y programas.
+    </div>
+
+    <div class="service">
+      <strong>🎮 Optimización</strong><br>
+      Mejoras de rendimiento y configuración.
+    </div>
+
+    <div class="contact">
+      <h2>Contacto</h2>
+      <p>📞 WhatsApp: <strong>3364 280204</strong></p>
+      <a href="https://wa.me/5493364280204" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
+    </div>
+
+    <footer>
+      Atención responsable · precios claros · trabajo garantizado
+    </footer>
+
+  </div>
+
+</body>
+</html>
