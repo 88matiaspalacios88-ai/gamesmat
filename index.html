@@ -1,102 +1,116 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Servicio técnico en computación</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b1220;
-  color: #e5e7eb;
-}
-
-.hero {
-  background: linear-gradient(rgba(11,18,32,.85), rgba(11,18,32,.85)),
-  url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-  background-size: cover;
-  background-position: center;
-  padding: 70px 20px;
-  text-align: center;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 20px;
-}
-
-.box {
-  background: #020617;
-  border: 1px solid #1e293b;
-  border-radius: 12px;
-  padding: 18px;
-  margin-bottom: 18px;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 8px;
-  padding: 12px 22px;
-  border-radius: 10px;
-  background: #2563eb;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.instagram {
-  background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
-}
-
 footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 14px;
-  color: #94a3b8;
+margin-top: 20px;
+font-size: 14px;
+color: #666;
 }
+.bg-motion {
+position: relative;
+height: 240px;
+margin-top: 60px;
+background: linear-gradient(135deg, #020617, #0b1220);
+}
+
+
+.bg-overlay {
+position: absolute;
+inset: 0;
+background: rgba(2,6,23,0.6);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+}
+
+
+.bg-overlay h2 {
+margin: 0 0 10px 0;
+color: #f8fafc;
+}
+
+
+.bg-overlay p {
+color: #c7d2fe;
+max-width: 700px;
+}
+
+
 </style>
 </head>
-
 <body>
-
-<section class="hero">
-  <h1>Servicio técnico en computación</h1>
-  <p>Reparación, mantenimiento y optimización de PC</p>
-</section>
-
 <div class="container">
+<div class="card">
+<h1>Servicios técnicos en computación</h1>
+<p>Soluciones claras, confiables y a medida para que tu computadora funcione como debe.</p>
 
-  <div class="box">
-    🔧 Reparación y mantenimiento de computadoras
-  </div>
 
-  <div class="box">
-    🖥️ Armado de PC a medida
-  </div>
+<div class="divider"></div>
 
-  <div class="box">
-    💾 Instalación de Windows y programas
-  </div>
 
-  <div class="box">
-    🎮 Optimización de rendimiento y juegos
-  </div>
+<h2>Servicios</h2>
 
-  <div class="contact">
-    <p>📞 WhatsApp: <strong>3364 280204</strong></p>
-    <a href="https://wa.me/5493364280204">WhatsApp</a>
-    <a href="https://www.facebook.com/matias.palacios.752">Facebook</a>
-    <a class="instagram" href="https://www.instagram.com/srborota/">Instagram</a>
-  </div>
 
-  <footer>
-    Atención responsable · precios claros · trabajo garantizado
-  </footer>
+<h3>🔧 Reparación y mantenimiento de PC</h3>
+<p>Diagnóstico completo, limpieza interna, cambio de pasta térmica, solución de fallas y mejora del rendimiento general.</p>
 
+
+<h3>🖥️ Armado de computadoras a medida</h3>
+<p>Armado según presupuesto y necesidad: hogar, trabajo, estudio o PC gamer.</p>
+
+
+<h3>💾 Instalación de software y sistemas</h3>
+<p>Instalación de Windows, drivers, programas esenciales y configuración lista para usar.</p>
+
+
+<h3>🎮 Optimización para juegos</h3>
+<p>Mejoras de FPS, ajustes gráficos, optimización del sistema y recomendaciones de hardware.</p>
+
+
+<h3>🤝 Soporte técnico y asesoramiento</h3>
+<p>Asesoramiento honesto antes de comprar o actualizar tu computadora, con atención personalizada.</p>
+
+
+<div class="divider"></div>
+
+
+<h2>Modalidad de trabajo</h2>
+<ul>
+<li>Servicio a domicilio</li>
+<li>Soporte remoto (cuando el problema lo permite)</li>
+<li>Atención personalizada</li>
+</ul>
+
+
+<div class="divider"></div>
+
+
+<h2>Contacto</h2>
+<p>Contactame directamente por mis redes para una respuesta rápida y sin vueltas.</p>
+
+
+<div class="contact">
+<h2>Contacto</h2>
+<p style="margin-bottom:15px;color:#c7d2fe;">📞 Teléfono / WhatsApp: <strong>3364 280204</strong></p>
+<a href="https://wa.me/5493364280204" target="_blank">WhatsApp</a>
+<a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
+<a class="instagram" href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
 </div>
 
+
+<footer>
+<p>Atención responsable, precios claros y trabajo garantizado.</p>
+</footer>
+
+
+<section class="bg-motion">
+<div class="bg-overlay">
+<h2>Trabajo profesional y responsable</h2>
+<p>Equipos confiables, soluciones reales y atención personalizada.</p>
+</div>
+</section>
+</div>
+</div>
 </body>
 </html>
