@@ -2,98 +2,86 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios técnicos en computación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(180deg, #0f172a, #020617);
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
       color: #e5e7eb;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 16px;
-      color: #f9fafb;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #cbd5f5;
-    }
-
-    .hero img {
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
-      color: #f8fafc;
+      margin-top: 40px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 10px;
     }
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      margin-bottom: 60px;
-    }
-
-    .service-card {
+    .card {
       background: #020617;
       border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 24px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 20px;
     }
 
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
-    .service-card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #e0e7ff;
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #94a3b8;
     }
+  </style>
+</head>
 
-    .service-card p {
-      color: #9ca3af;
-      line-height: 1.5;
-    }
+<body>
+  <div class="container">
 
-    .info {
-      background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 50px;
-    }
+    <h1>Servicios técnicos en computación</h1>
+    <p>Reparación, mantenimiento y optimización de PC. Atención responsable y personalizada.</p>
 
-    .info ul {
-      padding-left: 20px;
-    }
+    <h2>Servicios</h2>
 
-    .info li {
-      margin-bottom: 8px;
-      color: #c7d2fe;
+    <div class="card">
+      <p>🔧 Reparación y mantenimiento de PC</p>
+      <p>🖥️ Armado de computadoras a medida</p>
+      <p>💾 Instalación de software</p>
+      <p>🎮 Optimización para juegos</p>
+      <p>🤝 Asesoramiento técnico</p>
+    </div>
+
+    <h2>Contacto</h2>
+    <a href="https://www.facebook.com/matias.palacios.752" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/srborota/" target="_blank">Instagram</a>
+
+    <footer>
+      Atención responsable · precios claros · trabajo garantizado
+    </footer>
+
+  </div>
+</body>
+</html>
